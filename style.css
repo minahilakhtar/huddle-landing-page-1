@@ -20,6 +20,7 @@ body {
 main {
     margin: auto;
     width: 375px;
+    display: flex;
     flex-direction: column;
 }
 .logo {
@@ -63,6 +64,8 @@ button {
 }
 .social {
     margin-top: 4em;
+    display: flex;
+    justify-content: center;
 }
 i {
     font-size: 0.8rem;
@@ -72,17 +75,27 @@ i {
     height: 1.6rem;
     margin-right: 8px;
     padding-top: 5px;
+    text-align: center;
 }
 .attribution {
     display: none;
 }
+.right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-/* desktop view */
 
 @media only screen and (min-width: 600px){
     body {
         background-image: url(./images/bg-desktop.svg);
-        background-position: top left;
+        background-position: 9px 0;
     }
     main {
         display: flex;
@@ -99,12 +112,12 @@ i {
         height: 493px;
     }
     .left {
-        margin: 0 0 0 5em;
+        margin: auto auto 0 auto;
         display: flex;
         flex-direction: column;
     }
     .right {
-        margin: 13.5em auto auto 3em;
+        margin: 13.5em auto auto 0;
         z-index: 0;
     }
     h1 {
@@ -137,7 +150,7 @@ i {
     .social {
         position: absolute;
         z-index: 0;
-        margin: 8.5em 0 0 23em;
+        margin: 10em 0 0 24em;
     }
     i {
         font-size: 19px;
