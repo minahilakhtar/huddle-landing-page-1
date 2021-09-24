@@ -79,10 +79,10 @@ i {
 
 /* desktop view */
 
-@media only screen and (min-width: 500px){
+@media only screen and (min-width: 600px){
     body {
         background-image: url(./images/bg-desktop.svg);
-        background-size: contain;
+        background-position: top left;
     }
     main {
         display: flex;
@@ -91,20 +91,20 @@ i {
         height: 100%;
     }
     .logo {
-        width: 170px;
-        margin: 3em 10.5em 4.9em 0;
+        width: 200px;
+        margin: 3em 10.5em 5.7em 0;
     }
     .mockups {
         width: 696px;
         height: 493px;
     }
     .left {
-        margin-left: 3.5em;
+        margin: 0 0 0 5em;
         display: flex;
         flex-direction: column;
     }
     .right {
-        margin: auto auto auto 3em;
+        margin: 13.5em auto auto 3em;
         z-index: -1;
     }
     h1 {
@@ -128,7 +128,7 @@ i {
         height: 56px;
         border-radius: 28px;
         box-shadow: 2px 4px 9px 3px rgba(0, 0, 0, 0.258633);
-        margin: 1em 0 0 0;
+        margin: 1.5em 0 0 0;
     }
     button:hover {
         background-color: #E880E8;
@@ -137,7 +137,7 @@ i {
     .social {
         position: absolute;
         z-index: 0;
-        margin: 8.5em 0 0 21em;
+        margin: 8.5em 0 0 23em;
     }
     i {
         font-size: 19px;
