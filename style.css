@@ -17,7 +17,6 @@ body {
     display: flex;
 }
 main {
-    margin: auto;
     max-width: 375px;
     display: flex;
     flex-direction: column;
@@ -30,6 +29,7 @@ main {
     width: 296px;
     height: 209px;
     margin-bottom: 3em;
+        margin: auto;
 }
 h1 {
     font-weight: 600;
@@ -85,10 +85,11 @@ i {
     align-items: center;
 }
 
-@media only screen and (min-width: 600px){
+@media only screen and (min-width: 800px){
     body {
         background-image: url(./images/bg-desktop.svg);
-        background-position: 9px 0;
+        background-size: cover;
+        background-position: top left;
     }
     main {
         display: flex;
@@ -126,7 +127,8 @@ i {
         font-size: 18px;
         text-align: left;
         line-height: 27px;
-        width: 520px;
+        width: 540px;
+        /* max-width: 520px; */
         margin: 1em 0 0 0;
     }
     button {
