@@ -12,14 +12,13 @@ body {
     background-image: url(./images/bg-mobile.svg);
     background-repeat: no-repeat;
     background-color: #684BB1;
-    background-position: contain;
+    background-position: cover;
     color: #FFFFFF;
     display: flex;
-  
 }
 main {
     margin: auto;
-    width: 375px;
+    max-width: 375px;
     display: flex;
     flex-direction: column;
 }
@@ -80,17 +79,11 @@ i {
 .attribution {
     display: none;
 }
-.right {
+.right, .left {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.left {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 
 @media only screen and (min-width: 600px){
     body {
@@ -100,25 +93,26 @@ i {
     main {
         display: flex;
         flex-direction: row;
-        width: 100%;
+        width: 1440px;
         height: 100%;
+        margin: 0;
     }
     .logo {
         width: 200px;
-        margin: 3em 10.5em 5.7em 0;
+        margin: 0 0 6.1em 0;
+        display: block;
     }
     .mockups {
         width: 696px;
         height: 493px;
     }
     .left {
-        margin: auto auto 0 auto;
-        display: flex;
-        flex-direction: column;
+        display: block;
+        margin: 3em 1em 0 5em;
     }
     .right {
-        margin: 13.5em auto auto 0;
-        z-index: 0;
+        margin: 15em auto 0 2em;
+        display: block;
     }
     h1 {
         text-align: left;
